@@ -1,0 +1,14 @@
+//@version=4
+study(title="Moving Averages + Volume", shorttitle="MA+Volume")
+
+// Moving Averages
+fastMA = sma(close, 10)
+slowMA = sma(close, 20)
+
+// Volume
+showVol = input(title="Show Volume", type=input.bool, defval=true)
+plot(showVol ? volume : na, title="Volume", style=plot.style_columns, color=color.white, transp=70)
+
+// Plot Moving Averages
+plot(fastMA, title="Fast MA", color=color.green)
+plot(slowMA, title="Slow MA", color=color.red)
