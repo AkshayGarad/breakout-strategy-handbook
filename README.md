@@ -164,3 +164,27 @@ The following inputs can be adjusted to customize the Bollinger Bands + RSI indi
 - `rsi_length`: the length of the RSI (default: 14)
 - `overbought_level`: the overbought level of the RSI (default: 70)
 - `oversold_level`: the oversold level of the RSI (default: 30)
+
+
+# Moving Averages + Volume Indicator
+This is a custom technical indicator created using Pine Script on TradingView. The Moving Averages + Volume indicator combines Moving Averages and Volume indicators to identify potential trend reversals and confirm the strength of a trend.
+
+## Usage
+To use this indicator, follow these steps:
+
+1. Open the TradingView chart you want to add the indicator to.
+2. Click on "Indicators" in the top toolbar and select "Create."
+3. In the search bar, type "Moving Averages + Volume" and select the indicator.
+4. Adjust the indicator parameters to your liking, such as the number of periods being averaged.
+5. Click "Apply" to add the indicator to your chart.
+## Indicator Features
+The Moving Averages + Volume indicator includes the following features:
+
+- Moving Averages: Calculates the fast and slow Moving Averages based on the closing price of the security over a specified number of periods.
+- Volume: Displays the number of shares or contracts traded during a given period.
+- User Input: Allows the user to show or hide the Volume indicator.
+## Customization
+This indicator can be customized by adjusting the parameters passed to the sma() function (e.g., the number of periods being averaged) and the input() function (e.g., the default value of showVol). You can also change the colors and styles of the plots by modifying the color and style parameters of the plot() function.
+
+## Contributing
+Contributions to this project are welcome. If you find any issues or have any feature requests, please open an issue or a pull request.
