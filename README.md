@@ -142,3 +142,25 @@ Combining moving averages, Bollinger Bands, and volume can be effective for iden
 4. Enter a trade in the direction of the breakout.
 ## Conclusion
 Combining multiple indicators can be effective for traders looking to capitalize on potential breakouts in the stock market. However, it is important to remember that no trading strategy is foolproof, and traders should always exercise caution and use proper risk management techniques. Additionally, traders should backtest and practice any strategy before using it in live trading.
+
+
+# Bollinger Bands + RSI Indicator for TradingView
+This repository contains the Pine Script code for a Bollinger Bands + RSI indicator that can be used on the TradingView platform. The Bollinger Bands + RSI indicator is a technical analysis tool that combines two popular indicators to provide traders with valuable insights into market trends and potential trading opportunities.
+
+## How to Use
+To use the Bollinger Bands + RSI indicator, follow these steps:
+
+1. Create a new indicator in TradingView using Pine Script.
+2. Copy and paste the code from this repository into the Pine Editor window.
+3. Save the script and apply it to a chart.
+4. Adjust the inputs as desired to customize the indicator.
+The indicator will plot the Bollinger Bands, the RSI, and the band width on the chart. Traders can use these values to identify potential trading opportunities based on the position of the price relative to the bands, the strength of the trend indicated by the RSI, and periods of high volatility indicated by the band width.
+
+## Inputs
+The following inputs can be adjusted to customize the Bollinger Bands + RSI indicator:
+
+`len`: the length of the Bollinger Bands (default: 20)
+`mult`: the multiplier used to calculate the width of the Bollinger Bands (default: 2.0)
+`rsi_length`: the length of the RSI (default: 14)
+`overbought_level`: the overbought level of the RSI (default: 70)
+`oversold_level`: the oversold level of the RSI (default: 30)
