@@ -184,7 +184,7 @@ The Moving Averages + Volume indicator includes the following features:
 - Volume: Displays the number of shares or contracts traded during a given period.
 - User Input: Allows the user to show or hide the Volume indicator.
 ## Customization
-This indicator can be customized by adjusting the parameters passed to the sma() function (e.g., the number of periods being averaged) and the input() function (e.g., the default value of showVol). You can also change the colors and styles of the plots by modifying the color and style parameters of the plot() function.
+This indicator can be customized by adjusting the parameters passed to the `sma()` function (e.g., the number of periods being averaged) and the `input()` function (e.g., the default value of showVol). You can also change the colors and styles of the plots by modifying the color and style parameters of the `plot()` function.
 
 ## Contributing
 Contributions to this project are welcome. If you find any issues or have any feature requests, please open an issue or a pull request.
