@@ -159,8 +159,8 @@ The indicator will plot the Bollinger Bands, the RSI, and the band width on the 
 ## Inputs
 The following inputs can be adjusted to customize the Bollinger Bands + RSI indicator:
 
-`len`: the length of the Bollinger Bands (default: 20)
-`mult`: the multiplier used to calculate the width of the Bollinger Bands (default: 2.0)
-`rsi_length`: the length of the RSI (default: 14)
-`overbought_level`: the overbought level of the RSI (default: 70)
-`oversold_level`: the oversold level of the RSI (default: 30)
+- `len`: the length of the Bollinger Bands (default: 20)
+- `mult`: the multiplier used to calculate the width of the Bollinger Bands (default: 2.0)
+- `rsi_length`: the length of the RSI (default: 14)
+- `overbought_level`: the overbought level of the RSI (default: 70)
+- `oversold_level`: the oversold level of the RSI (default: 30)
