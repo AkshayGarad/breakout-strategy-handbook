@@ -1,0 +1,36 @@
+//@version=4
+study(title="Fibonacci Retracement + RSI", shorttitle="Fib+RSI")
+
+// Fibonacci Retracement
+startPrice = input(title="Start Price", type=input.float, defval=0.00)
+endPrice = input(title="End Price", type=input.float, defval=0.00)
+fib1 = input(title="Fibonacci 1", type=input.float, defval=0.236)
+fib2 = input(title="Fibonacci 2", type=input.float, defval=0.382)
+fib3 = input(title="Fibonacci 3", type=input.float, defval=0.618)
+fib4 = input(title="Fibonacci 4", type=input.float, defval=1.000)
+
+// Calculate Fibonacci Retracement Levels
+priceDiff = endPrice - startPrice
+level1 = endPrice - priceDiff * fib1
+level2 = endPrice - priceDiff * fib2
+level3 = endPrice - priceDiff * fib3
+level4 = endPrice - priceDiff * fib4
+
+// Plot Fibonacci Retracement Levels
+plot(level1, title="Fibonacci 1", color=color.green)
+plot(level2, title="Fibonacci 2", color=color.green)
+plot(level3, title="Fibonacci 3", color=color.green)
+plot(level4, title="Fibonacci 4", color=color.green)
+
+// Relative Strength Index
+rsiLen = input(title="RSI Length", type=input.integer, defval=14)
+overbought = input(title="Overbought", type=input.integer, defval=70)
+oversold = input(title="Oversold", type=input.integer, defval=30)
+
+// Calculate RSI
+rsi = rsi(close, rsiLen)
+
+// Plot RSI
+plot(rsi, title="RSI", color=color.blue)
+hline(overbought, title="Overbought", color=color.red)
+hline(oversold, title="Oversold", color=color.green)
