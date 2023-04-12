@@ -188,3 +188,26 @@ This indicator can be customized by adjusting the parameters passed to the `sma(
 
 ## Contributing
 Contributions to this project are welcome. If you find any issues or have any feature requests, please open an issue or a pull request.
+
+# Fibonacci Retracement + RSI Indicator
+This is a custom technical indicator created using Pine Script on TradingView. The Fibonacci Retracement + RSI indicator combines Fibonacci Retracement and Relative Strength Index (RSI) indicators to identify potential support and resistance levels and overbought/oversold conditions.
+
+## Usage
+To use this indicator, follow these steps:
+
+1. Open the TradingView chart you want to add the indicator to.
+2. Click on "Indicators" in the top toolbar and select "Create."
+3. In the search bar, type "Fibonacci Retracement + RSI" and select the indicator.
+4. Adjust the indicator parameters to your liking, such as the start and end prices for the Fibonacci Retracement levels or the RSI length.
+5. Click "Apply" to add the indicator to your chart.
+## Indicator Features
+The Fibonacci Retracement + RSI indicator includes the following features:
+
+1. Fibonacci Retracement: Calculates the Fibonacci Retracement levels based on user input parameters, such as start and end prices and Fibonacci levels.
+2. Relative Strength Index (RSI): Calculates the RSI based on user input parameters, such as RSI length, overbought, and oversold levels.
+3. User Input: Allows the user to customize the indicator by adjusting input parameters such as start and end prices for the Fibonacci Retracement levels, Fibonacci levels, RSI length, and overbought and oversold levels.
+## Customization
+This indicator can be customized by adjusting the parameters passed to the `input()` function (e.g., the start and end prices for the Fibonacci Retracement levels, Fibonacci levels, RSI length, and overbought/oversold levels) and the `plot()` function (e.g., the colors and styles of the Fibonacci Retracement levels and RSI).
+
+## Contributing
+Contributions to this project are welcome. If you find any issues or have any feature requests, please open an issue or a pull request.
